@@ -1,11 +1,11 @@
+import { AuthModule } from '@/auth/auth.module';
+import { envSchema } from '@/env/env';
+import { EnvModule } from '@/env/env.module';
+import { MetricsModule } from '@/metrics/metrics.module';
+import { ProductsModule } from '@/products/products.module';
+import { UsersModule } from '@/users/users.module';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { AuthModule } from 'src/auth/auth.module';
-import { envSchema } from 'src/env/env';
-import { EnvModule } from 'src/env/env.module';
-import { MetricsModule } from 'src/metrics/metrics.module';
-import { ProductsModule } from 'src/products/products.module';
-import { UsersModule } from 'src/users/users.module';
 
 @Module({
   imports: [
