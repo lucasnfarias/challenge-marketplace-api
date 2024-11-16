@@ -1,3 +1,4 @@
+import { AttachmentsModule } from '@/attachments/attachments.module';
 import { AuthModule } from '@/auth/auth.module';
 import { envSchema } from '@/env/env';
 import { EnvModule } from '@/env/env.module';
@@ -17,6 +18,7 @@ import { ConfigModule } from '@nestjs/config';
     AuthModule,
     MetricsModule,
     ProductsModule,
+    AttachmentsModule,
     UsersModule,
   ],
 })
