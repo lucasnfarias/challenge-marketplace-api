@@ -32,4 +32,19 @@ export class PrismaUsersRepository {
 
     return user;
   }
+
+  async findById(id: string) {
+    const user = this.prisma.user.findUnique({
+      where: {
+        id,
+      },
+      include: {
+        avatar: true,
+      },
+    });
+
+    if (!user) return null;
+
+    return user;
+  }
 }
